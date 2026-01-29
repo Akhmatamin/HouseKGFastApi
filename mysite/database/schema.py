@@ -137,3 +137,15 @@ class ReviewRead(ReviewBase):
     user: UserRead
 
     model_config = ConfigDict(from_attributes=True)
+
+
+
+
+class HousePredictSchema(BaseModel):
+    GrLivArea: int
+    YearBuilt: int
+    GarageCars:int
+    TotalBsmtSF:int
+    FullBath:int
+    OverallQual:int
+    Neighborhood:str
